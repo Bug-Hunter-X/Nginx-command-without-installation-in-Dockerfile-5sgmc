@@ -1,0 +1,1 @@
+This repository demonstrates a common mistake in Dockerfiles: attempting to run a command (nginx) without first installing the necessary package.  The original Dockerfile will fail to start the container because the `nginx` command is not found. The solution shows the correct way to include the `nginx` package using `apk add`. 
